@@ -4,7 +4,7 @@ ARG BUILD_DATE="2025-03-21T20:49:43Z"
 ARG BUILD_VERSION="1.0"
 ARG GITHUB_USER="ruslanbay"
 
-RUN apk update && apk add --no-cache curl jq imagemagick imagemagick-webp && rm -rf /var/cache/apk/* /tmp/*
+RUN apk update && apk add --no-cache git curl jq imagemagick imagemagick-webp && rm -rf /var/cache/apk/* /tmp/*
 
 LABEL org.opencontainers.image.title="Alpine ImageMagick" \
       org.opencontainers.image.description="ImageMagick includes a command-line interface for executing complex image processing tasks" \
